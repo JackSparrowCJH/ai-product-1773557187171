@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="merit-display">功德：{{merit}}</view>
+  <view class="combo" wx:if="{{combo >= 10}}">{{combo}} 连击!</view>
+
+  <view class="fish-wrapper" bindtap="onTapFish">
+    <image class="fish {{tapAnim ? 'tap-anim' : ''}}" src="/images/fish_default.png" />
+    <!-- 浮字动画 -->
+    <view class="float-text" wx:if="{{showFloat}}" style="left:{{floatX}}px;top:{{floatY}}px;">
+      功德+1
+    </view>
+  </view>
+
+  <view class="bottom-bar">
+    <navigator url="/pages/skin/skin" class="btn">皮肤</navigator>
+    <navigator url="/pages/rank/rank" class="btn">排行榜</navigator>
+    <button class="btn" open-type="share">分享</button>
+  </view>
+</view>
