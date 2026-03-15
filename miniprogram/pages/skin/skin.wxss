@@ -1,0 +1,4 @@
+.container { padding:40rpx; }
+.title { font-size:40rpx; color:#ffd700; text-align:center; margin-bottom:40rpx; }
+.skin-item { padding:30rpx; margin-bottom:20rpx; background:#2a2a3e; border-radius:16rpx; text-align:center; font-size:32rpx; }
+.skin-item.active { border:2rpx solid #ffd700; color:#ffd700; }
