@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="title">好友功德排行榜</view>
+  <view class="rank-item" wx:for="{{list}}" wx:key="openid">
+    <text class="rank-no">{{index + 1}}</text>
+    <text class="rank-name">{{item.nickname || '匿名'}}</text>
+    <text class="rank-merit">{{item.merit}} 功德</text>
+  </view>
+  <view wx:if="{{!list.length}}" class="empty">暂无数据</view>
+</view>
