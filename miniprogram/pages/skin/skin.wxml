@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="title">选择皮肤</view>
+  <view class="skin-item {{item.id === current ? 'active' : ''}}"
+        wx:for="{{skins}}" wx:key="id" bindtap="onSelect" data-id="{{item.id}}">
+    <text>{{item.name}}</text>
+  </view>
+</view>
